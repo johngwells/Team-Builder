@@ -1,5 +1,6 @@
 .App {
   /* text-align: center; */
+  font-family: 'Turret Road', cursive;
 }
 
 .App-header {
@@ -35,9 +36,9 @@
   /* border: 2px solid white; */
 }
 .member-card {
-  background-color: rgba(54, 181, 255, 0.226);
+  background-color: rgba(0, 116, 217, 0.842);
   border-radius: 10px;
-  color: #282c34;
+  color: #F5F5F5;
 }
 
 img {
@@ -61,4 +62,12 @@ form {
 
 .headline {
   text-align: center;
+}
+
+button {
+  background-color: #01FF70;
+}
+
+button:hover {
+  color: rgba(0, 116, 217, 0.842);
 }
