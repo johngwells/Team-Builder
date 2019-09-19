@@ -11,6 +11,7 @@ const Member = (props) => {
             <div className='member-text'><strong>{member.name}</strong></div>
             <div className='member-text'>{member.role}</div>
             <div className='member-text'>{member.email}</div>
+            <button>Purchase This Robot</button>
           </div>
           </div>
         ))}
