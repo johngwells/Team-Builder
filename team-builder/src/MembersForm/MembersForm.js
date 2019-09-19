@@ -16,31 +16,37 @@ const MembersForm = props => {
   }
 
   return (
-    <form onSubmit={submitForm}>
-      <label htmlFor='name' />
-      <input 
-        id='name' 
+    <div>
+      <h1 className='headline'>Add New Team Member</h1>
+      <form onSubmit={submitForm}>
+        <label htmlFor='name' />
+        <input 
+          id='name' 
+          type='text' 
+          name='name' 
+          placeholder='name'
+          onChange={handleChange}
+          required
+        />
+        <input 
+          id='role' 
+          type='text' 
+          name='role' 
+          placeholder='role'
+          onChange={handleChange}
+          required
+        />
+        <input 
+        id='email' 
         type='text' 
-        name='name' 
-        placeholder='name'
+        name='email' 
+        placeholder='email'
         onChange={handleChange} 
+        required
       />
-      <input 
-        id='role' 
-        type='text' 
-        name='role' 
-        placeholder='role'
-        onChange={handleChange} 
-      />
-      <input 
-      id='email' 
-      type='text' 
-      name='email' 
-      placeholder='email'
-      onChange={handleChange} 
-    />
-      <button type='submit'>Add Member</button>
-    </form>
+        <button type='submit'>Add Member</button>
+      </form>
+    </div>
   );
 }
 

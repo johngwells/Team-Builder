@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import MembersForm from './MembersForm/MembersForm';
 import Member from './Member/Member';
 
 function App() {
-  const [card, setCard] = useState([]);
+  const [card, setCard] = useState([
+    {
+      name: 'John Wells',
+      role: 'Software Developer',
+      email: 'johngwells@gmail.com'
+    }
+  ]);
+  const [photo, setPhoto] = useState([]);
 
   const addNewMember = member => {
     const newMember = {
